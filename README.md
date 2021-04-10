@@ -1,5 +1,5 @@
 # BidirectionalLayout
-iOS project, featuring advanced layout.
+iOS project, featuring bidirctional layout.
 
 ![ContactBook res](./01.png)
 
