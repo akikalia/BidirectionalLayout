@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eWi-Bf-09h" customClass="BlueHeader" customModule="Bidirectional_Layout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="637" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxd-KN-zpk">
+                    <rect key="frame" x="0.0" y="0.0" width="637" height="201"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lrt-uS-uMU">
+                            <rect key="frame" x="0.0" y="0.0" width="637" height="201"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuO-qb-dMe">
+                                    <rect key="frame" x="0.0" y="0.0" width="318.5" height="201"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfX-e4-dWx">
+                                    <rect key="frame" x="318.5" y="0.0" width="318.5" height="201"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Lrt-uS-uMU" secondAttribute="bottom" id="2GD-uL-OHb"/>
+                        <constraint firstItem="Lrt-uS-uMU" firstAttribute="leading" secondItem="Vxd-KN-zpk" secondAttribute="leading" id="VSx-Pr-iRh"/>
+                        <constraint firstAttribute="trailing" secondItem="Lrt-uS-uMU" secondAttribute="trailing" id="ff7-zb-AxY"/>
+                        <constraint firstItem="Lrt-uS-uMU" firstAttribute="top" secondItem="Vxd-KN-zpk" secondAttribute="top" id="xqY-BV-PJt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Vxd-KN-zpk" firstAttribute="top" secondItem="eWi-Bf-09h" secondAttribute="top" id="DoT-SY-Mmq"/>
+                <constraint firstItem="Vxd-KN-zpk" firstAttribute="leading" secondItem="eWi-Bf-09h" secondAttribute="leading" id="QZl-SS-XXz"/>
+                <constraint firstAttribute="bottom" secondItem="Vxd-KN-zpk" secondAttribute="bottom" id="h50-OF-Fm1"/>
+                <constraint firstAttribute="trailing" secondItem="Vxd-KN-zpk" secondAttribute="trailing" id="oWi-81-8Jc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftView" destination="tuO-qb-dMe" id="81s-dr-IDT"/>
+                <outlet property="rightView" destination="UfX-e4-dWx" id="FWW-yL-T6c"/>
+                <outlet property="wrapperView" destination="Vxd-KN-zpk" id="sfa-Un-pIR"/>
+            </connections>
+            <point key="canvasLocation" x="49.6875" y="-47.007042253521128"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
